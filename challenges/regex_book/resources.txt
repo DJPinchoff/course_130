@@ -1,0 +1,18 @@
+Resources
+
+While the book covers most everything you need to know to use regex effectively, it doesn't pretend to be a reference, especially for the more advanced features of regex. There is a huge amount of depth to the topic, especially in the Ruby variant of regex.
+
+Your first place for information should usually be the documentation for your language's regex implementation. While dry, this documentation is the only way to easily see what regex features are provided by your language, and it will also show you how to use regex.
+
+After this, good resources are always a quick Google search away; there are 1000s of places online to find out more about regex, with pages ranging from the most basic tutorials, to advanced analyses of how the various regex engines work. Here's a few sites that may be of interest:
+
+Essential Guide To Regular Expressions: Tools and Tutorials
+Regular-Expressions.info
+Regex Tutorial—From Regex 101 to Advanced Regex
+And don't forget about rubular and scriptular as well!
+
+There are two books that are frequently mentioned as good resources for regex:
+
+Introducing Regular Expressions
+Mastering Regular Expressions
+The former is a thorough introduction to regex and how to use them, and covers even advanced features of regex, such as look-ahead and look-behind assertions. The latter mostly assumes that you are familiar with the basics of regex, and takes you out to the deep waters where you will explore, in excruciating technical detail, nearly every facet of regex and their implementations.
