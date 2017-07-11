@@ -12,7 +12,7 @@ class AssertionsCarTest < MiniTest::Test
   end
 
   def test_wheels
-    assert_equal(4, @car.wheels)
+    assert_equal(3, @car.wheels)
   end
 
   def test_name_is_nil

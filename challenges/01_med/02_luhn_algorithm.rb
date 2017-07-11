@@ -28,5 +28,4 @@ class Luhn
     return temp.number if temp.valid?
     temp.number + (10 - (temp.addends.inject(:+) % 10))
   end
-
 end
