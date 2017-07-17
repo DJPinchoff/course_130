@@ -1,9 +1,7 @@
 class CircularBuffer
-  class BufferEmptyException < StandardError
-  end
+  class BufferEmptyException < StandardError; end
 
-  class BufferFullException < StandardError
-  end
+  class BufferFullException < StandardError; end
 
   def initialize(size)
     @buffer = Array.new(size, nil)
@@ -22,7 +20,7 @@ class CircularBuffer
 
   def write(input)
     if buffer_has_empty_slot?
-      if input != nil
+      if !input.nil?
         @buffer.each_with_index do |slot, index|
           if slot.nil?
             @buffer[index] = input
@@ -39,7 +37,7 @@ class CircularBuffer
     if buffer_has_empty_slot?
       write(input)
     else
-      if input != nil
+      if !input.nil?
         move_buffer_over
         @buffer[-1] = input
       end
@@ -64,8 +62,7 @@ class CircularBuffer
 
   def move_buffer_over
     @buffer.each_with_index do |slot, index|
-      break if index == @buffer.size - 1
-      @buffer[index] = @buffer[index + 1]
+      @buffer[index] = @buffer[index + 1] unless index == @buffer.size - 1
     end
   end
 end

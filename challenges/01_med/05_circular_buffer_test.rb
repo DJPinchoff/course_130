@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
+Minitest::Reporters.use!
 require_relative '05_circular_buffer'
 
 class CircularBufferTest < Minitest::Test
